@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Beni Affeder misin Nisa?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #ffe6f0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    h1 {
+      color: #d63384;
+      font-size: 28px;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    #yesBtn {
+      background: #ff4da6;
+      color: white;
+    }
+    #noBtn {
+      background: #999;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Beni affeder misin Nisa? yaptığımın yanlış olduğunu biliyoruym çok pişmanım tombik yanaklım. 3 kuruş etmiyen biri için böyle olmamalıyız. 1 şans ver  ❤️</h1>
+  <div class="buttons">
+    <button id="yesBtn" onclick="window.location.href='tesekkur.html'">Afettim eşşek</button>
+    <button id="noBtn">NO</button>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("noBtn");
+
+    // Hayır butonu kaçsın
+    noBtn.addEventListener("mouseover", () => {
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 50));
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    });
+  </script>
+</body>
+</html>
